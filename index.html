@@ -1,36 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flycode Portfolio</title>
+    <meta name="description" content="FlyCode, agencia de desarrollo web. Contenido de ejemplo para una futura presentación de servicios y proyectos.">
+    <title>FlyCode | Agencia de desarrollo web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 
 <body>
-<nav id="desktop-nav">
-<div class="logo">FlyCode</div>
-<div>
-    <ul class="nav-links">
-        <li>
-            <a href="#about">About</a>
-        </li>
-        <li>
-            <a href="#experience">Experience</a>
-        </li>
-        <li>
-            <a href="#projects">Projects</a>
-        </li>
-        <li>
-            <a href="#contact">Contact</a>
-        </li>
-    </ul>
-</div>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<script src="script.js"></script>
+    <header class="site-header" id="inicio">
+        <nav class="container nav" aria-label="Navegación principal">
+            <a class="logo" href="#inicio" aria-label="FlyCode, ir al inicio"><img src="assets/flycode-mark.svg" width="32" height="32" alt="">FlyCode</a>
+            <ul class="nav-links">
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#process">Proceso</a></li>
+                <li><a href="#testimonials">Testimonios</a></li>
+                <li><a class="nav-cta" href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero section" aria-labelledby="hero-title">
+            <div class="container hero-content">
+                <p class="eyebrow">AGENCIA DIGITAL · CONTENIDO DE EJEMPLO</p>
+                <h1 id="hero-title">Ideas ambiciosas.<br><span>Experiencias digitales</span> que funcionan.</h1>
+                <p class="hero-copy">Diseñamos y desarrollamos sitios web que ayudan a marcas en crecimiento a destacar, conectar y avanzar.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projects">Ver proyectos</a>
+                    <a class="text-link" href="#contact">Hablemos de tu proyecto <span aria-hidden="true">↗</span></a>
+                </div>
+                <p class="sample-note">Texto de muestra: sustituir por la propuesta de valor real de FlyCode.</p>
+            </div>
+            <div class="hero-decoration" aria-hidden="true"><img src="assets/flycode-mark.svg" width="240" height="240" alt=""></div>
+        </section>
+
+        <section class="section section-muted" id="about" aria-labelledby="about-title">
+            <div class="container split-layout">
+                <div>
+                    <p class="eyebrow">01 / SOBRE NOSOTROS</p>
+                    <h2 id="about-title">Tecnología bien pensada, hecha para personas.</h2>
+                </div>
+                <div class="section-copy">
+                    <p>Somos un equipo independiente que une estrategia, diseño y desarrollo para crear productos digitales claros, útiles y preparados para crecer.</p>
+                    <p class="sample-note">Contenido de ejemplo. Añadir aquí la historia, el equipo y la experiencia real de la agencia.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="services" aria-labelledby="services-title">
+            <div class="container">
+                <div class="section-heading">
+                    <div><p class="eyebrow">02 / LO QUE HACEMOS</p><h2 id="services-title">Servicios para dar forma a tu siguiente paso.</h2></div>
+                    <p>Un equipo conectado desde la primera idea hasta el lanzamiento.</p>
+                </div>
+                <div class="card-grid service-grid">
+                    <article class="card service-card"><span class="card-number">01</span><h3>Estrategia digital</h3><p>Definimos objetivos, audiencia y prioridades para que cada decisión tenga un propósito.</p><span class="sample-note">Servicio de ejemplo</span></article>
+                    <article class="card service-card"><span class="card-number">02</span><h3>Diseño web y UX</h3><p>Diseñamos experiencias intuitivas, accesibles y coherentes con la identidad de tu marca.</p><span class="sample-note">Servicio de ejemplo</span></article>
+                    <article class="card service-card"><span class="card-number">03</span><h3>Desarrollo web</h3><p>Construimos sitios rápidos y adaptables con una base técnica sencilla de mantener.</p><span class="sample-note">Servicio de ejemplo</span></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-dark" id="projects" aria-labelledby="projects-title">
+            <div class="container">
+                <div class="section-heading">
+                    <div><p class="eyebrow">03 / TRABAJO SELECCIONADO</p><h2 id="projects-title">Proyectos que convierten ideas en resultados.</h2></div>
+                    <p>Casos de ejemplo. Reemplazar nombres, imágenes y resultados antes de publicar.</p>
+                </div>
+                <div class="card-grid project-grid">
+                    <article class="project-card"><div class="project-art"><span>Imagen de proyecto pendiente</span></div><div class="project-info"><div><p class="project-type">CASO DE ESTUDIO DE EJEMPLO</p><h3>Estudio Norte</h3></div><p>Web corporativa · Diseño y desarrollo</p></div></article>
+                    <article class="project-card"><div class="project-art"><span>Imagen de proyecto pendiente</span></div><div class="project-info"><div><p class="project-type">CASO DE ESTUDIO DE EJEMPLO</p><h3>Casa Botánica</h3></div><p>E-commerce · Experiencia digital</p></div></article>
+                    <article class="project-card"><div class="project-art"><span>Imagen de proyecto pendiente</span></div><div class="project-info"><div><p class="project-type">CASO DE ESTUDIO DE EJEMPLO</p><h3>Forma Studio</h3></div><p>Landing page · Estrategia y web</p></div></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-muted" id="process" aria-labelledby="process-title">
+            <div class="container">
+                <div class="section-heading"><div><p class="eyebrow">04 / CÓMO TRABAJAMOS</p><h2 id="process-title">Un proceso claro, de principio a fin.</h2></div><p>Colaboración cercana y decisiones compartidas en cada etapa.</p></div>
+                <ol class="process-list">
+                    <li><span>01</span><div><h3>Descubrimiento</h3><p>Entendemos tus objetivos, tu audiencia y el reto que quieres resolver.</p></div></li>
+                    <li><span>02</span><div><h3>Dirección y diseño</h3><p>Definimos la estructura y damos forma a una experiencia visual coherente.</p></div></li>
+                    <li><span>03</span><div><h3>Desarrollo</h3><p>Convertimos el diseño en una web adaptable, accesible y lista para crecer.</p></div></li>
+                    <li><span>04</span><div><h3>Lanzamiento</h3><p>Revisamos los detalles y te acompañamos en la puesta en marcha.</p></div></li>
+                </ol>
+                <p class="sample-note">Proceso de ejemplo. Ajustar a la forma de trabajo real de la agencia.</p>
+            </div>
+        </section>
+
+        <section class="section" id="testimonials" aria-labelledby="testimonials-title">
+            <div class="container testimonial-wrap">
+                <div><p class="eyebrow">05 / LO QUE DICEN</p><h2 id="testimonials-title">Una buena colaboración se nota en el resultado.</h2></div>
+                <figure class="quote-card"><blockquote>“El equipo entendió nuestra visión desde el primer día y la convirtió en una experiencia web clara y cuidada.”</blockquote><figcaption><strong>Nombre de cliente de ejemplo</strong><span>Dirección, Empresa de ejemplo</span></figcaption><p class="sample-note">Testimonio ficticio para maquetación. Sustituir por una reseña autorizada.</p></figure>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+            <div class="container contact-layout">
+                <div><p class="eyebrow">06 / EMPECEMOS</p><h2 id="contact-title">¿Tienes una idea en mente?</h2><p>Cuéntanos qué quieres construir. Estamos aquí para ayudarte a dar el siguiente paso.</p></div>
+                <div class="contact-card"><p class="contact-label">CONTACTO DE EJEMPLO</p><a href="mailto:hola@flycode.example">hola@flycode.example <span aria-hidden="true">↗</span></a><p>El correo es ilustrativo y debe reemplazarse por la dirección real.</p></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content"><a class="logo" href="#inicio"><img src="assets/flycode-mark.svg" width="28" height="28" alt="">FlyCode</a><p>© 2026 FlyCode · Portfolio de ejemplo</p><a href="#inicio">Volver al inicio ↑</a></div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
