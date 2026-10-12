@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "lang": "de",
+    "title": "FlyCode | Webentwicklung und Webdesign",
+    "description": "Wir gestalten und entwickeln Websites für wachsende Marken. Entdecke die Leistungen, Projekte und Arbeitsweise von FlyCode."
+  },
+  "nav": {
+    "label": "Hauptnavigation",
+    "homeLabel": "FlyCode, zur Startseite",
+    "about": "Über uns",
+    "services": "Leistungen",
+    "projects": "Projekte",
+    "process": "Ablauf",
+    "testimonials": "Referenzen",
+    "contact": "Kontakt",
+    "switchToSpanish": "Zur spanischen Version wechseln",
+    "switchToGerman": "Zur deutschen Version wechseln",
+    "switchToEnglish": "Zur englischen Version wechseln"
+  },
+  "hero": {
+    "eyebrow": "DIGITALAGENTUR",
+    "titleBefore": "Ambitionierte Ideen.",
+    "titleHighlight": "Digitale Erlebnisse",
+    "titleAfter": "die funktionieren.",
+    "copy": "Wir gestalten und entwickeln Websites, mit denen wachsende Marken auffallen, Menschen erreichen und weiterkommen.",
+    "projectsLink": "Projekte ansehen",
+    "contactLink": "Lass uns über dein Projekt sprechen",
+    "sample": "Beispieltext: durch das tatsächliche Wertversprechen von FlyCode ersetzen."
+  },
+  "about": {
+    "eyebrow": "01 / ÜBER UNS",
+    "title": "Durchdachte Technologie für Menschen.",
+    "copy": "Wir sind ein unabhängiges Team und verbinden Strategie, Design und Entwicklung. So entstehen klare, nützliche digitale Produkte, die mit deinem Unternehmen wachsen.",
+    "sample": "Beispielinhalt. Hier die Geschichte, das Team und die tatsächliche Erfahrung der Agentur ergänzen."
+  },
+  "services": {
+    "eyebrow": "02 / UNSERE LEISTUNGEN",
+    "title": "Leistungen für deinen nächsten Schritt.",
+    "intro": "Ein eingespieltes Team, von der ersten Idee bis zum Launch.",
+    "digitalTitle": "Digitale Strategie",
+    "digitalCopy": "Wir definieren Ziele, Zielgruppen und Prioritäten, damit jede Entscheidung einen klaren Zweck hat.",
+    "designTitle": "Webdesign und UX",
+    "designCopy": "Wir gestalten intuitive, barrierearme Erlebnisse, die zur Identität deiner Marke passen.",
+    "developmentTitle": "Webentwicklung",
+    "developmentCopy": "Wir entwickeln schnelle, responsive Websites mit einer einfach zu wartenden technischen Basis.",
+    "example": "Beispielleistung"
+  },
+  "projects": {
+    "eyebrow": "03 / AUSGEWÄHLTE ARBEITEN",
+    "title": "Projekte, die Ideen in Ergebnisse verwandeln.",
+    "intro": "Beispielprojekte. Namen, Bilder und Ergebnisse vor der Veröffentlichung ersetzen.",
+    "imagePending": "Projektbild folgt",
+    "caseStudy": "BEISPIEL EINER FALLSTUDIE",
+    "northMeta": "Unternehmenswebsite · Design und Entwicklung",
+    "botanicalMeta": "E-Commerce · Digitales Erlebnis",
+    "formMeta": "Landingpage · Strategie und Website"
+  },
+  "process": {
+    "eyebrow": "04 / UNSER ABLAUF",
+    "title": "Ein klarer Prozess, von Anfang bis Ende.",
+    "intro": "Enge Zusammenarbeit und gemeinsame Entscheidungen in jeder Phase.",
+    "discoveryTitle": "Kennenlernen",
+    "discoveryCopy": "Wir verstehen deine Ziele, deine Zielgruppe und die Herausforderung, die du lösen möchtest.",
+    "designTitle": "Konzept und Design",
+    "designCopy": "Wir legen die Struktur fest und gestalten ein stimmiges visuelles Erlebnis.",
+    "buildTitle": "Entwicklung",
+    "buildCopy": "Wir setzen das Design in eine responsive, barrierearme und zukunftsfähige Website um.",
+    "launchTitle": "Launch",
+    "launchCopy": "Wir prüfen alle Details und begleiten dich bei der Veröffentlichung.",
+    "sample": "Beispielhafter Ablauf. An die tatsächliche Arbeitsweise der Agentur anpassen."
+  },
+  "testimonials": {
+    "eyebrow": "05 / DAS SAGEN UNSERE KUNDEN",
+    "title": "Gute Zusammenarbeit zeigt sich im Ergebnis.",
+    "quote": "Das Team hat unsere Vision vom ersten Tag an verstanden und in ein klares, sorgfältig gestaltetes Web-Erlebnis verwandelt.",
+    "client": "Beispielname eines Kunden",
+    "role": "Geschäftsführung, Beispielunternehmen",
+    "sample": "Fiktives Testimonial für das Layout. Durch eine freigegebene Kundenstimme ersetzen."
+  },
+  "contact": {
+    "eyebrow": "06 / LASS UNS STARTEN",
+    "title": "Hast du schon eine Idee?",
+    "copy": "Erzähl uns, was du vorhast. Wir helfen dir gern beim nächsten Schritt.",
+    "label": "BEISPIELKONTAKT",
+    "note": "Diese E-Mail-Adresse dient nur als Beispiel und muss durch die echte Adresse ersetzt werden."
+  },
+  "footer": {
+    "copyright": "© 2026 FlyCode · Beispielportfolio",
+    "backToTop": "Zurück nach oben"
+  }
+}

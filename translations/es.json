@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "lang": "es",
+    "title": "FlyCode | Agencia de desarrollo web",
+    "description": "Diseñamos y desarrollamos sitios web para marcas en crecimiento. Conoce los servicios, proyectos y proceso de FlyCode."
+  },
+  "nav": {
+    "label": "Navegación principal",
+    "homeLabel": "FlyCode, ir al inicio",
+    "about": "Nosotros",
+    "services": "Servicios",
+    "projects": "Proyectos",
+    "process": "Proceso",
+    "testimonials": "Testimonios",
+    "contact": "Contacto",
+    "switchToSpanish": "Cambiar al español",
+    "switchToGerman": "Cambiar al alemán",
+    "switchToEnglish": "Cambiar al inglés"
+  },
+  "hero": {
+    "eyebrow": "AGENCIA DIGITAL",
+    "titleBefore": "Ideas ambiciosas.",
+    "titleHighlight": "Experiencias digitales",
+    "titleAfter": "que funcionan.",
+    "copy": "Diseñamos y desarrollamos sitios web que ayudan a marcas en crecimiento a destacar, conectar y avanzar.",
+    "projectsLink": "Ver proyectos",
+    "contactLink": "Hablemos de tu proyecto",
+    "sample": "Texto de muestra: sustituir por la propuesta de valor real de FlyCode."
+  },
+  "about": {
+    "eyebrow": "01 / SOBRE NOSOTROS",
+    "title": "Tecnología bien pensada, hecha para personas.",
+    "copy": "Somos un equipo independiente que une estrategia, diseño y desarrollo para crear productos digitales claros, útiles y preparados para crecer.",
+    "sample": "Contenido de ejemplo. Añadir aquí la historia, el equipo y la experiencia real de la agencia."
+  },
+  "services": {
+    "eyebrow": "02 / LO QUE HACEMOS",
+    "title": "Servicios para dar forma a tu siguiente paso.",
+    "intro": "Un equipo conectado desde la primera idea hasta el lanzamiento.",
+    "digitalTitle": "Estrategia digital",
+    "digitalCopy": "Definimos objetivos, audiencia y prioridades para que cada decisión tenga un propósito.",
+    "designTitle": "Diseño web y UX",
+    "designCopy": "Diseñamos experiencias intuitivas, accesibles y coherentes con la identidad de tu marca.",
+    "developmentTitle": "Desarrollo web",
+    "developmentCopy": "Construimos sitios rápidos y adaptables con una base técnica sencilla de mantener.",
+    "example": "Servicio de ejemplo"
+  },
+  "projects": {
+    "eyebrow": "03 / TRABAJO SELECCIONADO",
+    "title": "Proyectos que convierten ideas en resultados.",
+    "intro": "Casos de ejemplo. Reemplazar nombres, imágenes y resultados antes de publicar.",
+    "imagePending": "Imagen de proyecto pendiente",
+    "caseStudy": "CASO DE ESTUDIO DE EJEMPLO",
+    "northMeta": "Web corporativa · Diseño y desarrollo",
+    "botanicalMeta": "E-commerce · Experiencia digital",
+    "formMeta": "Landing page · Estrategia y web"
+  },
+  "process": {
+    "eyebrow": "04 / CÓMO TRABAJAMOS",
+    "title": "Un proceso claro, de principio a fin.",
+    "intro": "Colaboración cercana y decisiones compartidas en cada etapa.",
+    "discoveryTitle": "Descubrimiento",
+    "discoveryCopy": "Entendemos tus objetivos, tu audiencia y el reto que quieres resolver.",
+    "designTitle": "Dirección y diseño",
+    "designCopy": "Definimos la estructura y damos forma a una experiencia visual coherente.",
+    "buildTitle": "Desarrollo",
+    "buildCopy": "Convertimos el diseño en una web adaptable, accesible y lista para crecer.",
+    "launchTitle": "Lanzamiento",
+    "launchCopy": "Revisamos los detalles y te acompañamos en la puesta en marcha.",
+    "sample": "Proceso de ejemplo. Ajustar a la forma de trabajo real de la agencia."
+  },
+  "testimonials": {
+    "eyebrow": "05 / LO QUE DICEN",
+    "title": "Una buena colaboración se nota en el resultado.",
+    "quote": "El equipo entendió nuestra visión desde el primer día y la convirtió en una experiencia web clara y cuidada.",
+    "client": "Nombre de cliente de ejemplo",
+    "role": "Dirección, Empresa de ejemplo",
+    "sample": "Testimonio ficticio para maquetación. Sustituir por una reseña autorizada."
+  },
+  "contact": {
+    "eyebrow": "06 / EMPECEMOS",
+    "title": "¿Tienes una idea en mente?",
+    "copy": "Cuéntanos qué quieres construir. Estamos aquí para ayudarte a dar el siguiente paso.",
+    "label": "CONTACTO DE EJEMPLO",
+    "note": "El correo es ilustrativo y debe reemplazarse por la dirección real."
+  },
+  "footer": {
+    "copyright": "© 2026 FlyCode · Portfolio de ejemplo",
+    "backToTop": "Volver al inicio"
+  }
+}

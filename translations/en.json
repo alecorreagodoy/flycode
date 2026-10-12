@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "lang": "en",
+    "title": "FlyCode | Web Design and Development",
+    "description": "We design and build websites for growing brands. Explore FlyCode's services, projects and approach."
+  },
+  "nav": {
+    "label": "Main navigation",
+    "homeLabel": "FlyCode, back to top",
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "process": "Process",
+    "testimonials": "Testimonials",
+    "contact": "Contact",
+    "switchToSpanish": "Switch to Spanish",
+    "switchToGerman": "Switch to German",
+    "switchToEnglish": "Switch to English"
+  },
+  "hero": {
+    "eyebrow": "DIGITAL AGENCY",
+    "titleBefore": "Ambitious ideas.",
+    "titleHighlight": "Digital experiences",
+    "titleAfter": "that work.",
+    "copy": "We design and build websites that help growing brands stand out, connect with people and move forward.",
+    "projectsLink": "Explore projects",
+    "contactLink": "Let's talk about your project",
+    "sample": "Sample copy: replace with FlyCode's actual value proposition."
+  },
+  "about": {
+    "eyebrow": "01 / ABOUT US",
+    "title": "Thoughtful technology, made for people.",
+    "copy": "We are an independent team bringing strategy, design and development together to create clear, useful digital products built to grow.",
+    "sample": "Sample content. Add the agency's story, team and real experience here."
+  },
+  "services": {
+    "eyebrow": "02 / WHAT WE DO",
+    "title": "Services to shape your next move.",
+    "intro": "One connected team, from the first idea through launch.",
+    "digitalTitle": "Digital strategy",
+    "digitalCopy": "We define goals, audiences and priorities so every decision has a clear purpose.",
+    "designTitle": "Web design and UX",
+    "designCopy": "We create intuitive, accessible experiences that feel true to your brand.",
+    "developmentTitle": "Web development",
+    "developmentCopy": "We build fast, responsive websites on a technical foundation that's easy to maintain.",
+    "example": "Sample service"
+  },
+  "projects": {
+    "eyebrow": "03 / SELECTED WORK",
+    "title": "Projects that turn ideas into results.",
+    "intro": "Sample projects. Replace names, images and results before publishing.",
+    "imagePending": "Project image coming soon",
+    "caseStudy": "SAMPLE CASE STUDY",
+    "northMeta": "Corporate website · Design and development",
+    "botanicalMeta": "E-commerce · Digital experience",
+    "formMeta": "Landing page · Strategy and web design"
+  },
+  "process": {
+    "eyebrow": "04 / HOW WE WORK",
+    "title": "A clear process, from start to finish.",
+    "intro": "Close collaboration and shared decisions at every stage.",
+    "discoveryTitle": "Discovery",
+    "discoveryCopy": "We get to know your goals, your audience and the challenge you want to solve.",
+    "designTitle": "Direction and design",
+    "designCopy": "We define the structure and shape a coherent visual experience.",
+    "buildTitle": "Development",
+    "buildCopy": "We turn the design into a responsive, accessible website that's ready to grow.",
+    "launchTitle": "Launch",
+    "launchCopy": "We check the details and support you as your site goes live.",
+    "sample": "Sample process. Adapt this to the agency's actual way of working."
+  },
+  "testimonials": {
+    "eyebrow": "05 / WHAT CLIENTS SAY",
+    "title": "Great collaboration shows in the result.",
+    "quote": "The team understood our vision from day one and turned it into a clear, carefully crafted web experience.",
+    "client": "Sample client name",
+    "role": "Director, Sample company",
+    "sample": "Fictional testimonial for layout purposes. Replace with an approved client review."
+  },
+  "contact": {
+    "eyebrow": "06 / LET'S GET STARTED",
+    "title": "Have an idea in mind?",
+    "copy": "Tell us what you'd like to build. We're here to help you take the next step.",
+    "label": "SAMPLE CONTACT",
+    "note": "This email address is illustrative and should be replaced with the real address."
+  },
+  "footer": {
+    "copyright": "© 2026 FlyCode · Sample portfolio",
+    "backToTop": "Back to top"
+  }
+}

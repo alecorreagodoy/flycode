@@ -1,0 +1,45 @@
+@media (max-width: 900px) {
+    .nav { align-items: flex-start; flex-direction: column; justify-content: center; gap: var(--space-1); padding-block: var(--space-3); }
+    .nav-links { flex-wrap: wrap; gap: var(--space-2) var(--space-6); }
+    .nav-links a { font: var(--body-sm); }
+    .hero { min-height: 570px; }
+    .hero h1 { font: var(--h1); font-size: clamp(3rem, 7.3vw, 4rem); letter-spacing: -.035em; }
+    .hero-decoration { right: -110px; opacity: .35; }
+    .split-layout, .testimonial-wrap { gap: 42px; }
+    .section-heading { align-items: start; flex-direction: column; gap: 18px; }
+    .section-heading > p { max-width: 520px; }
+    .project-info { flex-direction: column; }
+    .project-info > p { margin: 0; text-align: left; }
+}
+
+@media (max-width: 640px) {
+    html { scroll-padding-top: 110px; }
+    .container { width: min(100% - 36px, var(--container)); }
+    .section { padding: var(--space-16) 0; }
+    .nav { min-height: 0; }
+    .nav-links { gap: var(--space-2) var(--space-4); }
+    .hero h1 { font: var(--h1); font-size: clamp(2.65rem, 9vw, 3.5rem); line-height: 1; letter-spacing: -.035em; }
+    h2 { font: var(--h3); font-size: clamp(2rem, 8vw, 2.5rem); line-height: 1.15; }
+    .hero { min-height: 590px; }
+    .hero-decoration { top: auto; right: -90px; bottom: -60px; width: 250px; transform: none; opacity: .45; }
+    .hero-actions { align-items: flex-start; flex-direction: column; gap: 17px; }
+    .split-layout, .testimonial-wrap, .contact-layout { grid-template-columns: 1fr; gap: var(--space-6); }
+    .section-copy { padding-top: 0; }
+    .card-grid { grid-template-columns: 1fr; }
+    .card { min-height: 230px; }
+    .card-number { margin-bottom: 25px; }
+    .project-art { min-height: 210px; }
+    .project-info { flex-direction: row; }
+    .project-info > p { margin-top: 22px; text-align: right; }
+    .process-list { grid-template-columns: 1fr 1fr; row-gap: 20px; }
+    .process-list li { padding-right: 14px; }
+    .process-list li > span { margin-bottom: 20px; }
+    .quote-card { padding: var(--space-6); }
+    .contact-layout { gap: 18px; }
+    .footer-content { align-items: flex-start; flex-direction: column; justify-content: center; padding-block: 20px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { transition-duration: .01ms !important; }
+}
