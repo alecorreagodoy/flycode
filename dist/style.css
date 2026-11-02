@@ -214,6 +214,7 @@ h3 { margin: 0; font: var(--h3); letter-spacing: -.015em; }
 .testimonial-wrap { display: grid; grid-template-columns: .9fr 1.1fr; gap: 90px; align-items: center; }
 .quote-card { margin: 0; padding: 38px; background: var(--surface-raised); border: var(--border-1) solid var(--line); border-radius: var(--radius-lg); }
 .quote-card blockquote { margin: 0; font: var(--h4); letter-spacing: -.01em; }
+.collaboration-card > p { margin: 0; font: var(--h4); letter-spacing: -.01em; }
 .quote-card figcaption { display: flex; flex-direction: column; margin-top: 25px; font: var(--body-sm); }
 .quote-card figcaption span { color: var(--ink-muted); font: var(--caption); }
 
@@ -221,8 +222,9 @@ h3 { margin: 0; font: var(--h3); letter-spacing: -.015em; }
 .contact-layout { display: grid; grid-template-columns: 1.2fr .8fr; gap: 70px; align-items: center; }
 .contact-section h2 { max-width: 580px; }
 .contact-section .container > div > p:last-child { max-width: 510px; color: color-mix(in srgb, var(--brand-paper) 72%, transparent); }
-.contact-card { padding: 28px; color: var(--brand-midnight); background: var(--brand-volt); border-radius: var(--radius-lg); }
+.contact-card { min-height: 150px; padding: 28px; color: var(--brand-midnight); background: var(--brand-volt); border-radius: var(--radius-lg); }
 .contact-label { margin: 0 0 12px; font: var(--caption); letter-spacing: .08em; }
+.contact-card-reserved { min-height: 66px; }
 .contact-card > a { color: var(--accent); font: var(--h4); }
 .contact-card > a:hover { color: var(--brand-violet); }
 .contact-card > p:last-child { margin-bottom: 0; font: var(--body-sm); }

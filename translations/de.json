@@ -11,7 +11,7 @@
     "services": "Leistungen",
     "projects": "Projekte",
     "process": "Ablauf",
-    "testimonials": "Referenzen",
+    "collaboration": "Zusammenarbeit",
     "contact": "Kontakt",
     "switchToSpanish": "Zur spanischen Version wechseln",
     "switchToGerman": "Zur deutschen Version wechseln",
@@ -25,7 +25,7 @@
     "copy": "Wir gestalten und entwickeln Websites, mit denen wachsende Marken auffallen, Menschen erreichen und weiterkommen.",
     "projectsLink": "Projekte ansehen",
     "contactLink": "Lass uns über dein Projekt sprechen",
-    "sample": "Beispieltext: durch das tatsächliche Wertversprechen von FlyCode ersetzen."
+    "tagline": "Strategie, Design und Webentwicklung für wachsende Marken."
   },
   "heroAnimation": {
     "labels": "01 Idee|02 Struktur|03 Design|04 Code|05 Veröffentlichung",
@@ -38,7 +38,7 @@
     "eyebrow": "01 / ÜBER UNS",
     "title": "Durchdachte Technologie für Menschen.",
     "copy": "Wir sind ein unabhängiges Team und verbinden Strategie, Design und Entwicklung. So entstehen klare, nützliche digitale Produkte, die mit deinem Unternehmen wachsen.",
-    "sample": "Beispielinhalt. Hier die Geschichte, das Team und die tatsächliche Erfahrung der Agentur ergänzen."
+    "supportingCopy": "Ein unabhängiges Team, das Strategie, Design und Entwicklung verbindet."
   },
   "services": {
     "eyebrow": "02 / UNSERE LEISTUNGEN",
@@ -50,21 +50,18 @@
     "designCopy": "Wir gestalten intuitive, barrierearme Erlebnisse, die zur Identität deiner Marke passen.",
     "developmentTitle": "Webentwicklung",
     "developmentCopy": "Wir entwickeln schnelle, responsive Websites mit einer einfach zu wartenden technischen Basis.",
-    "example": "Beispielleistung"
+    "digitalDetail": "Klare Ziele und Prioritäten.",
+    "designDetail": "Barrierearme, stimmige Erlebnisse.",
+    "developmentDetail": "Schnelle, wartungsfreundliche Websites."
   },
   "projects": {
     "eyebrow": "03 / AUSGEWÄHLTE ARBEITEN",
     "title": "Projekte, die Ideen in Ergebnisse verwandeln.",
     "intro": "Eine Auswahl realer Webprojekte, die ich entwickelt habe.",
-    "imagePending": "Projektbild folgt",
-    "caseStudy": "BEISPIEL EINER FALLSTUDIE",
-    "northMeta": "Unternehmenswebsite · Design und Entwicklung",
-    "botanicalMeta": "E-Commerce · Digitales Erlebnis",
-    "formMeta": "Landingpage · Strategie und Website",
     "allProjects": "Alle Projekte ansehen"
   },
   "portfolio": { "eyebrow": "AUSGEWÄHLTE ARBEITEN", "title": "Reale Projekte", "intro": "Eine Auswahl von Websites, die ich entwickelt habe." },
-  "project": { "eyebrow": "PROJEKT", "back": "Zurück zum Portfolio", "typeLabel": "Projekttyp", "techLabel": "Technologie", "screenshotMissing": "Website-Screenshot folgt", "screenshotNote": "Ein echter Screenshot dieses Projekts ist derzeit nicht verfügbar.", "workTitle": "Umgesetzte Arbeit", "visit": "Website besuchen", "contact": "Ein ähnliches Projekt? Lass uns sprechen" },
+  "project": { "eyebrow": "PROJEKT", "back": "Zurück zum Portfolio", "typeLabel": "Projekttyp", "techLabel": "Technologie", "screenshotMissing": "Webprojekt", "screenshotNote": "Umfang und Technologien findest du in den Projektdetails.", "workTitle": "Umgesetzte Arbeit", "visit": "Website besuchen", "contact": "Ein ähnliches Projekt? Lass uns sprechen" },
   "process": {
     "eyebrow": "04 / UNSER ABLAUF",
     "title": "Ein klarer Prozess, von Anfang bis Ende.",
@@ -77,25 +74,21 @@
     "buildCopy": "Wir setzen das Design in eine responsive, barrierearme und zukunftsfähige Website um.",
     "launchTitle": "Launch",
     "launchCopy": "Wir prüfen alle Details und begleiten dich bei der Veröffentlichung.",
-    "sample": "Beispielhafter Ablauf. An die tatsächliche Arbeitsweise der Agentur anpassen."
+    "collaboration": "Wir begleiten jede Phase mit gemeinsamen Entscheidungen und engem Austausch."
   },
-  "testimonials": {
-    "eyebrow": "05 / DAS SAGEN UNSERE KUNDEN",
-    "title": "Gute Zusammenarbeit zeigt sich im Ergebnis.",
-    "quote": "Das Team hat unsere Vision vom ersten Tag an verstanden und in ein klares, sorgfältig gestaltetes Web-Erlebnis verwandelt.",
-    "client": "Beispielname eines Kunden",
-    "role": "Geschäftsführung, Beispielunternehmen",
-    "sample": "Fiktives Testimonial für das Layout. Durch eine freigegebene Kundenstimme ersetzen."
+  "collaboration": {
+    "eyebrow": "05 / ZUSAMMENARBEIT",
+    "title": "Klare Zusammenarbeit von Anfang bis Ende.",
+    "copy": "Wir verbinden Strategie, Design und Entwicklung, um Websites an den Zielen jedes Projekts auszurichten."
   },
   "contact": {
     "eyebrow": "06 / LASS UNS STARTEN",
     "title": "Hast du schon eine Idee?",
     "copy": "Erzähl uns, was du vorhast. Wir helfen dir gern beim nächsten Schritt.",
-    "label": "BEISPIELKONTAKT",
-    "note": "Diese E-Mail-Adresse dient nur als Beispiel und muss durch die echte Adresse ersetzt werden."
+    "label": "KONTAKT"
   },
   "footer": {
-    "copyright": "© 2026 FlyCode · Beispielportfolio",
+    "copyright": "© 2026 FlyCode · Webentwicklungsagentur",
     "backToTop": "Zurück nach oben",
     "home": "Startseite"
   }
