@@ -27,6 +27,13 @@
     "contactLink": "Lass uns über dein Projekt sprechen",
     "sample": "Beispieltext: durch das tatsächliche Wertversprechen von FlyCode ersetzen."
   },
+  "heroAnimation": {
+    "labels": "01 Idee|02 Struktur|03 Design|04 Code|05 Veröffentlichung",
+    "title": "Deine Idee,\\nin Produktion.",
+    "brand": "Deine Marke",
+    "button": "Loslegen",
+    "status": "IN PRODUKTION"
+  },
   "about": {
     "eyebrow": "01 / ÜBER UNS",
     "title": "Durchdachte Technologie für Menschen.",
@@ -48,13 +55,16 @@
   "projects": {
     "eyebrow": "03 / AUSGEWÄHLTE ARBEITEN",
     "title": "Projekte, die Ideen in Ergebnisse verwandeln.",
-    "intro": "Beispielprojekte. Namen, Bilder und Ergebnisse vor der Veröffentlichung ersetzen.",
+    "intro": "Eine Auswahl realer Webprojekte, die ich entwickelt habe.",
     "imagePending": "Projektbild folgt",
     "caseStudy": "BEISPIEL EINER FALLSTUDIE",
     "northMeta": "Unternehmenswebsite · Design und Entwicklung",
     "botanicalMeta": "E-Commerce · Digitales Erlebnis",
-    "formMeta": "Landingpage · Strategie und Website"
+    "formMeta": "Landingpage · Strategie und Website",
+    "allProjects": "Alle Projekte ansehen"
   },
+  "portfolio": { "eyebrow": "AUSGEWÄHLTE ARBEITEN", "title": "Reale Projekte", "intro": "Eine Auswahl von Websites, die ich entwickelt habe." },
+  "project": { "eyebrow": "PROJEKT", "back": "Zurück zum Portfolio", "typeLabel": "Projekttyp", "techLabel": "Technologie", "screenshotMissing": "Website-Screenshot folgt", "screenshotNote": "Ein echter Screenshot dieses Projekts ist derzeit nicht verfügbar.", "workTitle": "Umgesetzte Arbeit", "visit": "Website besuchen", "contact": "Ein ähnliches Projekt? Lass uns sprechen" },
   "process": {
     "eyebrow": "04 / UNSER ABLAUF",
     "title": "Ein klarer Prozess, von Anfang bis Ende.",
@@ -86,6 +96,7 @@
   },
   "footer": {
     "copyright": "© 2026 FlyCode · Beispielportfolio",
-    "backToTop": "Zurück nach oben"
+    "backToTop": "Zurück nach oben",
+    "home": "Startseite"
   }
 }

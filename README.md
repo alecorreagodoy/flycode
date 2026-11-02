@@ -1,6 +1,6 @@
 # FlyCode
 
-FlyCode is a static portfolio for a web agency. The site uses one shared HTML template, independent Spanish, German and English dictionaries in `translations/`, and the existing vanilla CSS and JavaScript.
+FlyCode is a static portfolio for a web agency. The site uses static HTML templates, independent Spanish, German and English dictionaries in `translations/`, reusable project data in `projects.json`, and vanilla CSS and JavaScript.
 
 ## Build the language pages
 
@@ -12,7 +12,19 @@ From this directory, run:
 node scripts/build.mjs
 ```
 
-The command generates `dist/es/index.html`, `dist/de/index.html` and `dist/en/index.html`, then copies the shared styles, script, logo, and fonts into `dist/`. Every page links to the other two languages. Spanish is the default language (`x-default`). The output uses relative asset URLs, so CSS, JavaScript, images, and fonts resolve from all language routes. The generator does not delete existing files in `dist/`.
+The command generates a home page, portfolio index, and project detail pages in Spanish, German and English under `dist/`, then copies the shared styles, script, logo, and fonts into `dist/`. Spanish is the default language (`x-default`). Equivalent pages link to each other with `hreflang`; canonical URLs describe each page. Relative page and asset URLs work in local previews. The generator does not delete existing files in `dist/`.
+
+Routes:
+
+- Home: `/es/`, `/de/`, `/en/`
+- Portfolio: `/es/proyectos/`, `/de/proyectos/`, `/en/proyectos/`
+- Detail: `/{language}/proyectos/{slug}/`
+
+## Add a project
+
+Add one object to `projects.json`. Give it a URL-safe, unique `slug`, a published `url`, and localized `name`, `description`, `type`, `technology`, and `work` values for `es`, `de`, and `en`. The generator uses the same data for the home cards, portfolio listing, and detail page in each language; no page template needs to be duplicated.
+
+Real project screenshots belong in `assets/projects/{slug}/`. Add the screenshot path to the project data and update the detail template/generator to render it with useful alternative text. Do not present a placeholder or a designed illustration as a real screenshot. Currently neither project has a local screenshot, so both detail pages show a translated placeholder. The public Juan Ballarino site could not be retrieved for visual inspection during this update; the Di Giovanni site was reachable, but its images were not copied or reused.
 
 For production, set `SITE_URL` to the public site origin (including any base path, if the site is hosted below a domain subpath) before building. This writes absolute canonical and `hreflang` URLs into all three pages:
 

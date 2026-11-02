@@ -27,6 +27,13 @@
     "contactLink": "Let's talk about your project",
     "sample": "Sample copy: replace with FlyCode's actual value proposition."
   },
+  "heroAnimation": {
+    "labels": "01 Idea|02 Structure|03 Design|04 Code|05 Launch",
+    "title": "Your idea,\\nin production.",
+    "brand": "Your brand",
+    "button": "Get started",
+    "status": "IN PRODUCTION"
+  },
   "about": {
     "eyebrow": "01 / ABOUT US",
     "title": "Thoughtful technology, made for people.",
@@ -48,13 +55,16 @@
   "projects": {
     "eyebrow": "03 / SELECTED WORK",
     "title": "Projects that turn ideas into results.",
-    "intro": "Sample projects. Replace names, images and results before publishing.",
+    "intro": "A selection of real web projects I have developed.",
     "imagePending": "Project image coming soon",
     "caseStudy": "SAMPLE CASE STUDY",
     "northMeta": "Corporate website · Design and development",
     "botanicalMeta": "E-commerce · Digital experience",
-    "formMeta": "Landing page · Strategy and web design"
+    "formMeta": "Landing page · Strategy and web design",
+    "allProjects": "View all projects"
   },
+  "portfolio": { "eyebrow": "SELECTED WORK", "title": "Real projects", "intro": "A selection of websites I have developed." },
+  "project": { "eyebrow": "PROJECT", "back": "Back to portfolio", "typeLabel": "Project type", "techLabel": "Technology", "screenshotMissing": "Website screenshot pending", "screenshotNote": "A real screenshot of this project is not available yet.", "workTitle": "Work completed", "visit": "Visit website", "contact": "Have a similar project? Let’s talk" },
   "process": {
     "eyebrow": "04 / HOW WE WORK",
     "title": "A clear process, from start to finish.",
@@ -86,6 +96,7 @@
   },
   "footer": {
     "copyright": "© 2026 FlyCode · Sample portfolio",
-    "backToTop": "Back to top"
+    "backToTop": "Back to top",
+    "home": "Home"
   }
 }

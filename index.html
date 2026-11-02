@@ -13,6 +13,7 @@
     <link rel="alternate" hreflang="x-default" href="{{meta.urlEs}}">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../mediaqueries.css">
+    <link rel="stylesheet" href="../hero-animation/fc-idea.css">
 </head>
 
 <body>
@@ -22,7 +23,7 @@
             <ul class="nav-links">
                 <li><a href="#about">{{nav.about}}</a></li>
                 <li><a href="#services">{{nav.services}}</a></li>
-                <li><a href="#projects">{{nav.projects}}</a></li>
+                <li><a href="{{meta.portfolioUrl}}">{{nav.projects}}</a></li>
                 <li><a href="#process">{{nav.process}}</a></li>
                 <li><a href="#testimonials">{{nav.testimonials}}</a></li>
                 <li><a class="nav-cta nose" href="#contact">{{nav.contact}}</a></li>
@@ -34,6 +35,7 @@
 
     <main>
         <section class="hero section" aria-labelledby="hero-title">
+            <div class="fci fci--hero" data-fc-idea data-labels="{{heroAnimation.labels}}" data-title="{{heroAnimation.title}}" data-brand="{{heroAnimation.brand}}" data-button="{{heroAnimation.button}}" data-status="{{heroAnimation.status}}" aria-hidden="true"></div>
             <div class="container hero-content">
                 <p class="eyebrow">{{hero.eyebrow}}</p>
                 <h1 id="hero-title">{{hero.titleBefore}}<br><span>{{hero.titleHighlight}}</span> {{hero.titleAfter}}</h1>
@@ -44,7 +46,6 @@
                 </div>
                 <p class="sample-note">{{hero.sample}}</p>
             </div>
-            <div class="hero-decoration" aria-hidden="true"><img src="../assets/flycode-mark.svg" width="240" height="240" alt=""></div>
         </section>
 
         <section class="section section-muted" id="about" aria-labelledby="about-title">
@@ -80,11 +81,8 @@
                     <div><p class="eyebrow">{{projects.eyebrow}}</p><h2 id="projects-title">{{projects.title}}</h2></div>
                     <p>{{projects.intro}}</p>
                 </div>
-                <div class="card-grid project-grid">
-                    <article class="project-card"><div class="project-art"><span>{{projects.imagePending}}</span></div><div class="project-info"><div><p class="project-type">{{projects.caseStudy}}</p><h3>Estudio Norte</h3></div><p>{{projects.northMeta}}</p></div></article>
-                    <article class="project-card"><div class="project-art"><span>{{projects.imagePending}}</span></div><div class="project-info"><div><p class="project-type">{{projects.caseStudy}}</p><h3>Casa Botánica</h3></div><p>{{projects.botanicalMeta}}</p></div></article>
-                    <article class="project-card"><div class="project-art"><span>{{projects.imagePending}}</span></div><div class="project-info"><div><p class="project-type">{{projects.caseStudy}}</p><h3>Forma Studio</h3></div><p>{{projects.formMeta}}</p></div></article>
-                </div>
+                <div class="card-grid project-grid">{{projects.cards}}</div>
+                <p class="projects-more"><a class="text-link" href="{{meta.portfolioUrl}}">{{projects.allProjects}} <span aria-hidden="true">↗</span></a></p>
             </div>
         </section>
 
@@ -120,6 +118,7 @@
         <div class="container footer-content"><a class="logo" href="#inicio"><img src="../assets/flycode-mark.svg" width="28" height="28" alt="">FlyCode</a><p>{{footer.copyright}}</p><a href="#inicio">{{footer.backToTop}} ↑</a></div>
     </footer>
     <script src="../script.js" defer></script>
+    <script src="../hero-animation/fc-idea.js" defer></script>
 </body>
 
 </html>

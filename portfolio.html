@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{meta.lang}}">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{meta.description}}"><title>{{meta.title}}</title>
+    <link rel="canonical" href="{{meta.canonical}}">
+    <link rel="alternate" hreflang="es" href="{{meta.urlEs}}"><link rel="alternate" hreflang="de" href="{{meta.urlDe}}"><link rel="alternate" hreflang="en" href="{{meta.urlEn}}"><link rel="alternate" hreflang="x-default" href="{{meta.urlEs}}">
+    <link rel="stylesheet" href="{{meta.stylesUrl}}"><link rel="stylesheet" href="{{meta.mediaqueriesUrl}}">
+</head>
+<body>
+<header class="site-header"><nav class="container nav" aria-label="{{nav.label}}">
+    <a class="logo" href="{{meta.homeUrl}}" aria-label="{{nav.homeLabel}}"><img src="{{meta.logoUrl}}" width="32" height="32" alt="">FlyCode</a>
+    <ul class="nav-links"><li><a href="{{meta.homeUrl}}#about">{{nav.about}}</a></li><li><a href="{{meta.homeUrl}}#services">{{nav.services}}</a></li><li><a href="{{meta.portfolioUrl}}" aria-current="page">{{nav.projects}}</a></li><li><a class="nav-cta nose" href="{{meta.homeUrl}}#contact">{{nav.contact}}</a></li>
+    <li><a class="language-switch" href="{{meta.languageUrl}}" hreflang="{{meta.languageCode}}" lang="{{meta.languageCode}}" aria-label="{{meta.languageLabel}}">{{meta.languageName}}</a></li><li><a class="language-switch" href="{{meta.languageUrl2}}" hreflang="{{meta.languageCode2}}" lang="{{meta.languageCode2}}" aria-label="{{meta.languageLabel2}}">{{meta.languageName2}}</a></li></ul>
+</nav></header>
+<main><section class="section section-dark portfolio-page"><div class="container">
+    <p class="eyebrow">{{portfolio.eyebrow}}</p><h1>{{portfolio.title}}</h1><p class="portfolio-intro">{{portfolio.intro}}</p>
+    <div class="card-grid project-grid portfolio-grid">{{projects.cards}}</div>
+</div></section></main>
+<footer class="site-footer"><div class="container footer-content"><a class="logo" href="{{meta.homeUrl}}"><img src="{{meta.logoUrl}}" width="28" height="28" alt="">FlyCode</a><p>{{footer.copyright}}</p><a href="{{meta.homeUrl}}">{{footer.home}} ↑</a></div></footer>
+<script src="{{meta.scriptUrl}}" defer></script>
+</body></html>

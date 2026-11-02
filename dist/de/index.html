@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Wir gestalten und entwickeln Websites für wachsende Marken. Entdecke die Leistungen, Projekte und Arbeitsweise von FlyCode.">
     <title>FlyCode | Webentwicklung und Webdesign</title>
-    <link rel="canonical" href="../de/">
-    <link rel="alternate" hreflang="es" href="../es/">
-    <link rel="alternate" hreflang="de" href="../de/">
-    <link rel="alternate" hreflang="en" href="../en/">
-    <link rel="alternate" hreflang="x-default" href="../es/">
+    <link rel="canonical" href="/de/">
+    <link rel="alternate" hreflang="es" href="/es/">
+    <link rel="alternate" hreflang="de" href="/de/">
+    <link rel="alternate" hreflang="en" href="/en/">
+    <link rel="alternate" hreflang="x-default" href="/es/">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../mediaqueries.css">
+    <link rel="stylesheet" href="../hero-animation/fc-idea.css">
 </head>
 
 <body>
@@ -22,18 +23,19 @@
             <ul class="nav-links">
                 <li><a href="#about">Über uns</a></li>
                 <li><a href="#services">Leistungen</a></li>
-                <li><a href="#projects">Projekte</a></li>
+                <li><a href="proyectos">Projekte</a></li>
                 <li><a href="#process">Ablauf</a></li>
                 <li><a href="#testimonials">Referenzen</a></li>
                 <li><a class="nav-cta nose" href="#contact">Kontakt</a></li>
-                <li><a class="language-switch" href="../es/" hreflang="es" lang="es" aria-label="Zur spanischen Version wechseln">Español</a></li>
-                <li><a class="language-switch" href="../en/" hreflang="en" lang="en" aria-label="Zur englischen Version wechseln">English</a></li>
+                <li><a class="language-switch" href="../es" hreflang="es" lang="es" aria-label="Zur spanischen Version wechseln">Español</a></li>
+                <li><a class="language-switch" href="../en" hreflang="en" lang="en" aria-label="Zur englischen Version wechseln">English</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="hero section" aria-labelledby="hero-title">
+            <div class="fci fci--hero" data-fc-idea data-labels="01 Idee|02 Struktur|03 Design|04 Code|05 Veröffentlichung" data-title="Deine Idee,\nin Produktion." data-brand="Deine Marke" data-button="Loslegen" data-status="IN PRODUKTION" aria-hidden="true"></div>
             <div class="container hero-content">
                 <p class="eyebrow">DIGITALAGENTUR</p>
                 <h1 id="hero-title">Ambitionierte Ideen.<br><span>Digitale Erlebnisse</span> die funktionieren.</h1>
@@ -44,7 +46,6 @@
                 </div>
                 <p class="sample-note">Beispieltext: durch das tatsächliche Wertversprechen von FlyCode ersetzen.</p>
             </div>
-            <div class="hero-decoration" aria-hidden="true"><img src="../assets/flycode-mark.svg" width="240" height="240" alt=""></div>
         </section>
 
         <section class="section section-muted" id="about" aria-labelledby="about-title">
@@ -78,13 +79,11 @@
             <div class="container">
                 <div class="section-heading">
                     <div><p class="eyebrow">03 / AUSGEWÄHLTE ARBEITEN</p><h2 id="projects-title">Projekte, die Ideen in Ergebnisse verwandeln.</h2></div>
-                    <p>Beispielprojekte. Namen, Bilder und Ergebnisse vor der Veröffentlichung ersetzen.</p>
+                    <p>Eine Auswahl realer Webprojekte, die ich entwickelt habe.</p>
                 </div>
-                <div class="card-grid project-grid">
-                    <article class="project-card"><div class="project-art"><span>Projektbild folgt</span></div><div class="project-info"><div><p class="project-type">BEISPIEL EINER FALLSTUDIE</p><h3>Estudio Norte</h3></div><p>Unternehmenswebsite · Design und Entwicklung</p></div></article>
-                    <article class="project-card"><div class="project-art"><span>Projektbild folgt</span></div><div class="project-info"><div><p class="project-type">BEISPIEL EINER FALLSTUDIE</p><h3>Casa Botánica</h3></div><p>E-Commerce · Digitales Erlebnis</p></div></article>
-                    <article class="project-card"><div class="project-art"><span>Projektbild folgt</span></div><div class="project-info"><div><p class="project-type">BEISPIEL EINER FALLSTUDIE</p><h3>Forma Studio</h3></div><p>Landingpage · Strategie und Website</p></div></article>
-                </div>
+                <div class="card-grid project-grid"><article class="project-card"><a class="project-card-link" href="proyectos/juan-ballarino"><div class="project-art project-art-pending"><span>Website-Screenshot folgt</span></div><div class="project-info"><div><p class="project-type">Individuelle Webentwicklung</p><h3>Architekt Juan Ballarino</h3></div><p>React, JavaScript, HTML und CSS</p></div></a></article>
+<article class="project-card"><a class="project-card-link" href="proyectos/di-giovanni-repuestos"><div class="project-art project-art-pending"><span>Website-Screenshot folgt</span></div><div class="project-info"><div><p class="project-type">Webentwicklung für einen Autoteilebetrieb</p><h3>Di Giovanni Repuestos</h3></div><p>WordPress</p></div></a></article></div>
+                <p class="projects-more"><a class="text-link" href="proyectos">Alle Projekte ansehen <span aria-hidden="true">↗</span></a></p>
             </div>
         </section>
 
@@ -120,6 +119,7 @@
         <div class="container footer-content"><a class="logo" href="#inicio"><img src="../assets/flycode-mark.svg" width="28" height="28" alt="">FlyCode</a><p>© 2026 FlyCode · Beispielportfolio</p><a href="#inicio">Zurück nach oben ↑</a></div>
     </footer>
     <script src="../script.js" defer></script>
+    <script src="../hero-animation/fc-idea.js" defer></script>
 </body>
 
 </html>

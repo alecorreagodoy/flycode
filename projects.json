@@ -1,0 +1,36 @@
+[
+  {
+    "slug": "juan-ballarino",
+    "url": "https://juanballarino.com",
+    "technology": { "es": "React, JavaScript, HTML y CSS", "de": "React, JavaScript, HTML und CSS", "en": "React, JavaScript, HTML and CSS" },
+    "type": { "es": "Desarrollo web a medida", "de": "Individuelle Webentwicklung", "en": "Custom web development" },
+    "name": { "es": "Arquitecto Juan Ballarino", "de": "Architekt Juan Ballarino", "en": "Architect Juan Ballarino" },
+    "description": {
+      "es": "Desarrollo web a medida para el Arquitecto Juan Ballarino, realizado con React, JavaScript, HTML y CSS.",
+      "de": "Individuelle Website für Architekt Juan Ballarino, umgesetzt mit React, JavaScript, HTML und CSS.",
+      "en": "A custom website for Architect Juan Ballarino, built with React, JavaScript, HTML and CSS."
+    },
+    "work": {
+      "es": "Realicé el desarrollo web a medida utilizando React, JavaScript, HTML y CSS.",
+      "de": "Ich habe die individuelle Website mit React, JavaScript, HTML und CSS entwickelt.",
+      "en": "I built the custom website using React, JavaScript, HTML and CSS."
+    }
+  },
+  {
+    "slug": "di-giovanni-repuestos",
+    "url": "https://digiovannirepuestos.com",
+    "technology": { "es": "WordPress", "de": "WordPress", "en": "WordPress" },
+    "type": { "es": "Desarrollo web para un negocio de repuestos automotores", "de": "Webentwicklung für einen Autoteilebetrieb", "en": "Website development for an automotive parts business" },
+    "name": { "es": "Di Giovanni Repuestos", "de": "Di Giovanni Repuestos", "en": "Di Giovanni Repuestos" },
+    "description": {
+      "es": "Sitio web desarrollado para un negocio de repuestos automotores.",
+      "de": "Website für einen Betrieb für Autoersatzteile.",
+      "en": "A website developed for an automotive parts business."
+    },
+    "work": {
+      "es": "Realicé el desarrollo del sitio web para un negocio de repuestos automotores utilizando WordPress.",
+      "de": "Ich habe die Website für einen Autoteilebetrieb mit WordPress entwickelt.",
+      "en": "I developed the website for an automotive parts business using WordPress."
+    }
+  }
+]

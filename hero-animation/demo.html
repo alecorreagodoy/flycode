@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FlyCode · From Idea to Reality — demo</title>
+<!-- Fuentes solo para la demo (tu web ya las carga). El componente hereda la tipografía de la página. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wdth,wght@75..100,400..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fc-idea.css">
+<style>
+  /* ---- Simulación de las variables y del hero existentes de FlyCode ---- */
+  :root {
+    --brand-midnight: #120e1c; --brand-violet: #6c3bff; --brand-paper: #f4f1ea; --brand-volt: #d4ff4f;
+    --violet-300: #9d7dff; --violet-900: #251a4d;
+    --surface: #120e1c; --surface-raised: #1c1729; --line: #2f2940; --line-strong: #6f6886;
+    --ink: #f4f1ea; --ink-muted: #a9a2ba; --accent: #9d7dff; --on-accent: #120e1c;
+    --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  }
+  :root[data-theme="light"] {
+    --surface: #f4f1ea; --surface-raised: #ffffff; --line: #ddd8ce; --line-strong: #8a84a0;
+    --ink: #120e1c; --ink-muted: #5e5870; --accent: #6c3bff; --on-accent: #ffffff;
+  }
+  html, body { margin: 0; background: var(--surface); color: var(--ink); font-family: var(--font-sans); }
+  .site-header { position: relative; z-index: 2; height: 88px; box-sizing: border-box; padding: 0 80px; display: flex; align-items: center; justify-content: space-between; }
+  .site-header a { color: var(--ink); text-decoration: none; font-weight: 600; font-size: 20px; letter-spacing: -.02em; }
+  .site-header nav { display: flex; gap: 32px; }
+  .site-header nav a { font-weight: 500; font-size: 15px; color: var(--ink-muted); letter-spacing: 0; }
+
+  .hero { position: relative; min-height: clamp(640px, calc(100svh - 88px), 900px); display: flex; align-items: center; background: var(--surface); overflow: hidden; }
+  .hero__content { position: relative; z-index: 1; box-sizing: border-box; width: 100%; max-width: 1440px; margin: 0 auto; padding: 0 80px 40px; }
+  .hero__eyebrow { margin: 0 0 28px; font: 500 12px/16px var(--font-mono); letter-spacing: .08em; color: var(--ink-muted); }
+  .hero__title { margin: 0; max-width: 9.4em; font-size: clamp(42px, 5.4vw, 80px); line-height: 1; font-weight: 600; letter-spacing: -.035em; }
+  .hero__lead { margin: 28px 0 36px; max-width: 28em; font-size: clamp(17px, 1.35vw, 20px); line-height: 1.5; color: var(--ink-muted); }
+  .hero__actions { display: flex; gap: 16px; flex-wrap: wrap; }
+  .btn { display: inline-flex; align-items: center; height: 56px; padding: 0 28px; font-weight: 600; font-size: 17px; text-decoration: none; border-radius: 12px; }
+  .btn--primary { background: var(--accent); color: var(--on-accent); border-radius: 12px 0 12px 12px; }
+  .btn--secondary { border: 1px solid var(--line-strong); color: var(--ink); }
+  .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  @media (max-width: 1199px) { .site-header, .hero__content { padding-left: 40px; padding-right: 40px; } .hero__title { max-width: 8.2em; } .hero__lead { max-width: 22em; } }
+  @media (max-width: 767px) {
+    .site-header { padding: 0 20px; height: 72px; } .site-header nav { display: none; }
+    .hero { align-items: flex-end; min-height: calc(100svh - 72px); }
+    .hero__content { padding: 300px 20px 48px; } /* demo: deja libre el alto del componente (--fci-mobile-height) */
+    .hero__title, .hero__lead { max-width: none; }
+  }
+  .next { padding: 120px 80px; max-width: 1440px; margin: 0 auto; box-sizing: border-box; color: var(--ink-muted); min-height: 70vh; }
+  .demo-bar { position: fixed; right: 16px; bottom: 16px; z-index: 10; display: flex; gap: 8px; }
+  .demo-bar button { height: 40px; padding: 0 16px; border-radius: 12px 0 12px 12px; border: 1px solid var(--line-strong); background: var(--surface); color: var(--ink); font: 500 13px var(--font-sans); cursor: pointer; }
+  @media (max-width: 767px) { .demo-bar { display: none; } }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="#">FlyCode</a>
+  <nav aria-label="Principal"><a href="#">Trabajo</a><a href="#">Servicios</a><a href="#">Proceso</a><a href="#">Estudio</a></nav>
+</header>
+
+<section class="hero" aria-labelledby="hero-title">
+  <!-- ▼ COMPONENTE: lo único que se añade al hero existente ▼ -->
+  <div class="fci fci--hero" data-fc-idea>
+  </div>
+  <!-- ▲ fin del componente ▲ -->
+
+  <div class="hero__content">
+    <p class="hero__eyebrow">ESTUDIO DE DESARROLLO WEB Y PRODUCTO DIGITAL</p>
+    <h1 class="hero__title" id="hero-title">Diseñamos y desarrollamos producto digital que despega.</h1>
+    <p class="hero__lead">Webs, aplicaciones y plataformas a medida, con la precisión de la ingeniería y el cuidado del diseño.</p>
+    <div class="hero__actions">
+      <a class="btn btn--primary" href="#contacto">Empieza tu proyecto</a>
+      <a class="btn btn--secondary" href="#trabajo">Ver trabajo</a>
+    </div>
+  </div>
+</section>
+
+<section class="next" id="trabajo"><p>Siguiente sección de la página…</p></section>
+
+<div class="demo-bar">
+  <button type="button" id="b-theme">Tema claro</button>
+  <button type="button" id="b-pause">Pausar</button>
+</div>
+
+<script src="fc-idea.js" defer></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var el = document.querySelector('[data-fc-idea]');
+    var tb = document.getElementById('b-theme'), pb = document.getElementById('b-pause'), paused = false;
+    tb.addEventListener('click', function () {
+      var light = document.documentElement.dataset.theme !== 'light';
+      document.documentElement.dataset.theme = light ? 'light' : 'dark';
+      tb.textContent = light ? 'Tema oscuro' : 'Tema claro';
+      el.__fcIdea && el.__fcIdea.refreshColors();   // ← llamar tras cambiar de tema
+    });
+    pb.addEventListener('click', function () {
+      paused = !paused; paused ? el.__fcIdea.pause() : el.__fcIdea.play(); pb.textContent = paused ? 'Reanudar' : 'Pausar';
+    });
+  });
+</script>
+</body>
+</html>
