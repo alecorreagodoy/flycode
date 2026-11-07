@@ -13,6 +13,8 @@
     "process": "Process",
     "collaboration": "Collaboration",
     "contact": "Contact",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu",
     "switchToSpanish": "Switch to Spanish",
     "switchToGerman": "Switch to German",
     "switchToEnglish": "Switch to English"

@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{meta.description}}"><title>{{meta.title}}</title>
+    <link rel="icon" type="image/svg+xml" href="{{meta.faviconSvgUrl}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{meta.favicon32Url}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{meta.favicon16Url}}">
+    <link rel="shortcut icon" href="{{meta.faviconIcoUrl}}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{meta.appleTouchIconUrl}}">
     <link rel="canonical" href="{{meta.canonical}}">
     <link rel="alternate" hreflang="es" href="{{meta.urlEs}}"><link rel="alternate" hreflang="de" href="{{meta.urlDe}}"><link rel="alternate" hreflang="en" href="{{meta.urlEn}}"><link rel="alternate" hreflang="x-default" href="{{meta.urlEs}}">
     <link rel="stylesheet" href="{{meta.stylesUrl}}"><link rel="stylesheet" href="{{meta.mediaqueriesUrl}}">
@@ -10,7 +15,8 @@
 <body>
 <header class="site-header"><nav class="container nav" aria-label="{{nav.label}}">
     <a class="logo" href="{{meta.homeUrl}}" aria-label="{{nav.homeLabel}}"><img src="{{meta.logoUrl}}" width="32" height="32" alt="">FlyCode</a>
-    <ul class="nav-links"><li><a href="{{meta.homeUrl}}#about">{{nav.about}}</a></li><li><a href="{{meta.portfolioUrl}}">{{nav.projects}}</a></li><li><a class="nav-cta nose" href="{{meta.homeUrl}}#contact">{{nav.contact}}</a></li>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="{{nav.openMenu}}" data-open-label="{{nav.openMenu}}" data-close-label="{{nav.closeMenu}}"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="primary-navigation"><li><a href="{{meta.homeUrl}}#about">{{nav.about}}</a></li><li><a href="{{meta.portfolioUrl}}">{{nav.projects}}</a></li><li><a class="nav-cta nose" href="{{meta.homeUrl}}#contact">{{nav.contact}}</a></li>
     <li><a class="language-switch" href="{{meta.languageUrl}}" hreflang="{{meta.languageCode}}" lang="{{meta.languageCode}}" aria-label="{{meta.languageLabel}}">{{meta.languageName}}</a></li><li><a class="language-switch" href="{{meta.languageUrl2}}" hreflang="{{meta.languageCode2}}" lang="{{meta.languageCode2}}" aria-label="{{meta.languageLabel2}}">{{meta.languageName2}}</a></li></ul>
 </nav></header>
 <main><article class="section project-detail"><div class="container">
@@ -18,7 +24,7 @@
     <header class="project-detail-heading"><p class="eyebrow">{{project.eyebrow}}</p><h1>{{project.name}}</h1><p class="project-lead">{{project.description}}</p>
       <dl class="project-facts"><div><dt>{{project.typeLabel}}</dt><dd>{{project.type}}</dd></div><div><dt>{{project.techLabel}}</dt><dd>{{project.technology}}</dd></div></dl>
     </header>
-    <figure class="project-screenshot"><div class="screenshot-placeholder"><span>{{project.screenshotMissing}}</span></div><figcaption>{{project.screenshotNote}}</figcaption></figure>
+    <figure class="project-screenshot">{{project.screenshotMarkup}}<figcaption>{{project.screenshotNote}}</figcaption></figure>
     <section class="project-work"><h2>{{project.workTitle}}</h2><p>{{project.workCopy}}</p></section>
     <div class="project-actions"><a class="button button-primary nose" href="{{project.url}}" target="_blank" rel="noopener noreferrer">{{project.visit}} <span aria-hidden="true">↗</span></a><a class="text-link" href="{{meta.homeUrl}}#contact">{{project.contact}} <span aria-hidden="true">↗</span></a></div>
 </div></article></main>

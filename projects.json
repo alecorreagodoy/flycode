@@ -2,6 +2,12 @@
   {
     "slug": "juan-ballarino",
     "url": "https://juanballarino.com",
+    "screenshot": {
+      "path": "assets/projects/juan-ballarino/homepage.jpg",
+      "width": 2240,
+      "height": 1133,
+      "alt": { "es": "Captura del sitio web del Arquitecto Juan Ballarino", "de": "Screenshot der Website von Architekt Juan Ballarino", "en": "Screenshot of Architect Juan Ballarino’s website" }
+    },
     "technology": { "es": "React, JavaScript, HTML y CSS", "de": "React, JavaScript, HTML und CSS", "en": "React, JavaScript, HTML and CSS" },
     "type": { "es": "Desarrollo web a medida", "de": "Individuelle Webentwicklung", "en": "Custom web development" },
     "name": { "es": "Arquitecto Juan Ballarino", "de": "Architekt Juan Ballarino", "en": "Architect Juan Ballarino" },
@@ -19,6 +25,12 @@
   {
     "slug": "di-giovanni-repuestos",
     "url": "https://digiovannirepuestos.com",
+    "screenshot": {
+      "path": "assets/projects/di-giovanni-repuestos/homepage.jpg",
+      "width": 2240,
+      "height": 1227,
+      "alt": { "es": "Captura del sitio web de Di Giovanni Repuestos", "de": "Screenshot der Website von Di Giovanni Repuestos", "en": "Screenshot of the Di Giovanni Repuestos website" }
+    },
     "technology": { "es": "WordPress", "de": "WordPress", "en": "WordPress" },
     "type": { "es": "Desarrollo web para un negocio de repuestos automotores", "de": "Webentwicklung für einen Autoteilebetrieb", "en": "Website development for an automotive parts business" },
     "name": { "es": "Di Giovanni Repuestos", "de": "Di Giovanni Repuestos", "en": "Di Giovanni Repuestos" },

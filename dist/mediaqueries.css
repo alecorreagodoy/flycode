@@ -1,7 +1,11 @@
 @media (max-width: 900px) {
-    .nav { align-items: flex-start; flex-direction: column; justify-content: center; gap: var(--space-1); padding-block: var(--space-3); }
-    .nav-links { flex-wrap: wrap; gap: var(--space-2) var(--space-6); }
-    .nav-links a { font: var(--body-sm); }
+    .nav.nav--collapsible { position: relative; align-items: center; flex-direction: row; justify-content: space-between; min-height: 68px; padding-block: 0; }
+    .nav--collapsible .nav-toggle { display: flex; width: 44px; height: 44px; flex: 0 0 auto; flex-direction: column; align-items: center; justify-content: center; gap: 5px; padding: 0; color: var(--brand-paper); background: transparent; border: 1px solid color-mix(in srgb, var(--brand-paper) 34%, transparent); border-radius: var(--radius-sm); cursor: pointer; }
+    .nav--collapsible .nav-links { display: none; position: absolute; top: calc(100% + 8px); right: 0; flex-direction: column; align-items: stretch; gap: 4px; width: min(100%, 360px); margin: 0; padding: 8px; background: var(--brand-midnight); border: 1px solid color-mix(in srgb, var(--brand-paper) 18%, transparent); border-radius: var(--radius-md); box-shadow: 0 14px 32px color-mix(in srgb, var(--brand-midnight) 38%, transparent); }
+    .nav--collapsible .nav-links.is-open { display: flex; }
+    .nav--collapsible .nav-links li { width: 100%; }
+    .nav--collapsible .nav-links a { display: block; padding: 11px 12px; font: var(--body-sm); }
+    .nav--collapsible .nav-links .nav-cta { margin: 4px 0; text-align: center; }
     .hero { min-height: 570px; }
     .hero h1 { font: var(--h1); font-size: clamp(3rem, 7.3vw, 4rem); letter-spacing: -.035em; }
     .split-layout, .testimonial-wrap { gap: 42px; }
@@ -15,8 +19,7 @@
     html { scroll-padding-top: 110px; }
     .container { width: min(100% - 36px, var(--container)); }
     .section { padding: var(--space-16) 0; }
-    .nav { min-height: 0; }
-    .nav-links { gap: var(--space-2) var(--space-4); }
+    .nav.nav--collapsible { min-height: 64px; }
     .hero h1 { font: var(--h1); font-size: clamp(2.65rem, 9vw, 3.5rem); line-height: 1; letter-spacing: -.035em; }
     h2 { font: var(--h3); font-size: clamp(2rem, 8vw, 2.5rem); line-height: 1.15; }
     .hero { min-height: 590px; }
@@ -28,7 +31,7 @@
     .card-grid { grid-template-columns: 1fr; }
     .card { min-height: 230px; }
     .card-number { margin-bottom: 25px; }
-    .project-art { min-height: 210px; }
+    .project-art { height: 210px; }
     .project-info { flex-direction: row; }
     .project-info > p { margin-top: 22px; text-align: right; }
     .process-list { grid-template-columns: 1fr 1fr; row-gap: 20px; }

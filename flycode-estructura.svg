@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1450" role="img" aria-labelledby="title description">
+  <title id="title">Estructura del proyecto FlyCode</title>
+  <desc id="description">Mapa del proyecto fuente FlyCode, sus recursos, plantillas, traducciones y archivos estáticos generados en dist para español, alemán e inglés.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1">
+      <stop stop-color="#171222"/>
+      <stop offset="1" stop-color="#0d0b13"/>
+    </linearGradient>
+    <linearGradient id="source" x2="1">
+      <stop stop-color="#6c3bff"/>
+      <stop offset="1" stop-color="#8b64ff"/>
+    </linearGradient>
+    <linearGradient id="output" x2="1">
+      <stop stop-color="#d4ff4f"/>
+      <stop offset="1" stop-color="#a8d938"/>
+    </linearGradient>
+    <style>
+      .sans{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+      .mono{font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace}
+      .muted{fill:#aaa2ba}.paper{fill:#f4f1ea}.purple{fill:#b49aff}.lime{fill:#d4ff4f}
+      .panel{fill:#1d1928;stroke:#393347;stroke-width:1.5}
+      .row{fill:#252032;stroke:#393347;stroke-width:1}
+    </style>
+  </defs>
+  <rect width="1600" height="1450" fill="url(#bg)"/>
+  <circle cx="1430" cy="100" r="210" fill="#6c3bff" opacity=".08"/>
+  <circle cx="130" cy="1320" r="250" fill="#d4ff4f" opacity=".035"/>
+
+  <text x="72" y="82" class="sans paper" font-size="17" font-weight="700" letter-spacing="4">MAPA DEL PROYECTO</text>
+  <text x="72" y="145" class="sans paper" font-size="48" font-weight="750">Estructura de FlyCode</text>
+  <text x="74" y="183" class="sans muted" font-size="20">Del código fuente a los archivos listos para publicar</text>
+
+  <rect x="64" y="220" width="720" height="1135" rx="24" class="panel"/>
+  <rect x="816" y="220" width="720" height="1135" rx="24" class="panel"/>
+  <rect x="64" y="220" width="720" height="8" rx="4" fill="url(#source)"/>
+  <rect x="816" y="220" width="720" height="8" rx="4" fill="url(#output)"/>
+
+  <text x="96" y="276" class="sans paper" font-size="26" font-weight="700">Proyecto fuente</text>
+  <text x="96" y="307" class="sans muted" font-size="16">Plantillas, recursos y generador</text>
+  <text x="848" y="276" class="sans paper" font-size="26" font-weight="700">dist/</text>
+  <text x="848" y="307" class="sans muted" font-size="16">Salida estática del build</text>
+
+  <rect x="96" y="330" width="656" height="48" rx="12" fill="#302648" stroke="#7852d6"/>
+  <text x="116" y="362" class="mono purple" font-size="20" font-weight="700">flycode/</text>
+
+  <g class="mono" font-size="16.5">
+    <text x="112" y="419" class="purple" font-weight="700">assets/</text>
+    <text x="145" y="450" class="paper">├─ favicon/</text>
+    <text x="180" y="478" class="muted">├─ favicon.svg</text>
+    <text x="180" y="506" class="muted">├─ favicon-16x16.png · favicon-32x32.png</text>
+    <text x="180" y="534" class="muted">├─ favicon.ico · apple-touch-icon.png</text>
+    <text x="145" y="570" class="paper">├─ fonts/</text>
+    <text x="180" y="598" class="muted">├─ instrument-sans-latin.woff2</text>
+    <text x="180" y="626" class="muted">└─ jetbrains-mono-latin.woff2</text>
+    <text x="145" y="662" class="paper">├─ projects/</text>
+    <text x="180" y="690" class="muted">├─ juan-ballarino/homepage.jpg</text>
+    <text x="180" y="718" class="muted">└─ di-giovanni-repuestos/homepage.jpg</text>
+    <text x="145" y="754" class="paper">└─ flycode-mark.svg</text>
+
+    <text x="112" y="806" class="purple" font-weight="700">hero-animation/</text>
+    <text x="145" y="836" class="muted">demo.html · fc-idea.css · fc-idea.js</text>
+    <text x="112" y="884" class="purple" font-weight="700">scripts/</text>
+    <text x="145" y="914" class="muted">build.mjs · genera las páginas en dist/</text>
+    <text x="112" y="962" class="purple" font-weight="700">translations/</text>
+    <text x="145" y="992" class="muted">es.json · de.json · en.json</text>
+    <text x="112" y="1040" class="purple" font-weight="700">HTML y contenido</text>
+    <text x="145" y="1070" class="muted">index.html · portfolio.html · project.html</text>
+    <text x="145" y="1098" class="muted">projects.json · README.md</text>
+    <text x="112" y="1146" class="purple" font-weight="700">Estilos y comportamiento</text>
+    <text x="145" y="1176" class="muted">style.css · mediaqueries.css · script.js</text>
+  </g>
+
+  <rect x="848" y="330" width="656" height="48" rx="12" fill="#292c1c" stroke="#819d39"/>
+  <text x="868" y="362" class="mono lime" font-size="20" font-weight="700">dist/</text>
+  <g class="mono" font-size="16.5">
+    <text x="864" y="419" class="lime" font-weight="700">index.html</text>
+    <text x="1010" y="419" class="muted">redirecciona a /es/</text>
+    <text x="864" y="467" class="lime" font-weight="700">assets/</text>
+    <text x="897" y="497" class="muted">favicon/ · fonts/ · projects/ · flycode-mark.svg</text>
+    <text x="864" y="545" class="lime" font-weight="700">hero-animation/</text>
+    <text x="897" y="575" class="muted">fc-idea.css · fc-idea.js</text>
+    <text x="864" y="623" class="muted">style.css · mediaqueries.css · script.js</text>
+
+    <text x="864" y="685" class="lime" font-weight="700">es/</text>
+    <text x="897" y="715" class="paper">index.html</text>
+    <text x="897" y="745" class="paper">proyectos/index.html</text>
+    <text x="897" y="775" class="muted">proyectos/juan-ballarino/index.html</text>
+    <text x="897" y="805" class="muted">proyectos/di-giovanni-repuestos/index.html</text>
+
+    <text x="864" y="867" class="lime" font-weight="700">de/</text>
+    <text x="897" y="897" class="paper">index.html</text>
+    <text x="897" y="927" class="paper">proyectos/index.html</text>
+    <text x="897" y="957" class="muted">proyectos/juan-ballarino/index.html</text>
+    <text x="897" y="987" class="muted">proyectos/di-giovanni-repuestos/index.html</text>
+
+    <text x="864" y="1049" class="lime" font-weight="700">en/</text>
+    <text x="897" y="1079" class="paper">index.html</text>
+    <text x="897" y="1109" class="paper">proyectos/index.html</text>
+    <text x="897" y="1139" class="muted">proyectos/juan-ballarino/index.html</text>
+    <text x="897" y="1169" class="muted">proyectos/di-giovanni-repuestos/index.html</text>
+  </g>
+
+  <path d="M784 785h32" stroke="#746b85" stroke-width="2" stroke-dasharray="5 6"/>
+  <circle cx="800" cy="785" r="5" fill="#d4ff4f"/>
+  <rect x="96" y="1232" width="656" height="78" rx="14" class="row"/>
+  <text x="118" y="1264" class="sans paper" font-size="16" font-weight="650">Resumen</text>
+  <text x="118" y="1290" class="sans muted" font-size="15">3 idiomas · 12 páginas · recursos compartidos</text>
+  <rect x="848" y="1232" width="656" height="78" rx="14" class="row"/>
+  <text x="870" y="1264" class="sans paper" font-size="16" font-weight="650">Para publicar</text>
+  <text x="870" y="1290" class="sans muted" font-size="15">Subir el contenido de dist/ al directorio del dominio</text>
+
+  <text x="72" y="1405" class="sans muted" font-size="14">FlyCode · mapa de archivos fuente y salida generada</text>
+  <text x="1528" y="1405" text-anchor="end" class="sans lime" font-size="14" font-weight="700">SOURCE → BUILD → DIST</text>
+</svg>

@@ -16,6 +16,26 @@ for (const name of ['index', 'portfolio', 'project']) {
 }
 const projects = JSON.parse(await readFile(path.join(root, 'projects.json'), 'utf8'));
 
+const rootRedirect = `<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; url=./es/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="canonical" href="${publicUrl('/es/')}" />
+    <title>FlyCode</title>
+</head>
+<body></body>
+</html>
+`;
+await mkdir(output, { recursive: true });
+await writeFile(path.join(output, 'index.html'), rootRedirect);
+
 function flatten(value, prefix = '', result = {}) {
     for (const [key, child] of Object.entries(value)) {
         const fullKey = prefix ? `${prefix}.${key}` : key;
@@ -50,12 +70,29 @@ function relativeOrAbsolute(from, to) {
     return process.env.SITE_URL ? publicUrl(to) : relativePath(from, to);
 }
 
+function projectVisual(project, locale, from, card = false) {
+    if (!project.screenshot) {
+        const missing = escapeHtml(translations[locale].project.screenshotMissing);
+        return card
+            ? `<div class="project-art project-art-pending"><span>${missing}</span></div>`
+            : `<div class="screenshot-placeholder"><span>${missing}</span></div>`;
+    }
+
+    const screenshot = project.screenshot;
+    const src = escapeHtml(relativeOrAbsolute(from, `/${screenshot.path}`));
+    const alt = escapeHtml(screenshot.alt[locale]);
+    const image = `<img src="${src}" width="${screenshot.width}" height="${screenshot.height}" alt="${alt}" loading="lazy" decoding="async">`;
+    return card ? `<div class="project-art project-art-image">${image}</div>` : `<img class="project-screenshot-image" src="${src}" width="${screenshot.width}" height="${screenshot.height}" alt="${alt}" loading="lazy" decoding="async">`;
+}
+
 function projectCard(project, locale, fromPage) {
     const name = project.name[locale];
     const type = project.type[locale];
     const technology = project.technology[locale];
-    const url = relativeOrAbsolute(route(locale, fromPage), route(locale, 'project', project.slug));
-    return `<article class="project-card"><a class="project-card-link" href="${escapeHtml(url)}"><div class="project-art project-art-pending"><span>${escapeHtml(translations[locale].project.screenshotMissing)}</span></div><div class="project-info"><div><p class="project-type">${escapeHtml(type)}</p><h3>${escapeHtml(name)}</h3></div><p>${escapeHtml(technology)}</p></div></a></article>`;
+    const from = route(locale, fromPage);
+    const url = relativeOrAbsolute(from, route(locale, 'project', project.slug));
+    const visual = projectVisual(project, locale, from, true);
+    return `<article class="project-card"><a class="project-card-link" href="${escapeHtml(url)}">${visual}<div class="project-info"><div><p class="project-type">${escapeHtml(type)}</p><h3>${escapeHtml(name)}</h3></div><p>${escapeHtml(technology)}</p></div></a></article>`;
 }
 
 function metadata(locale, page, slug = '', title, description) {
@@ -77,6 +114,11 @@ function metadata(locale, page, slug = '', title, description) {
         'meta.mediaqueriesUrl': relativeOrAbsolute(from, '/mediaqueries.css'),
         'meta.scriptUrl': relativeOrAbsolute(from, '/script.js'),
         'meta.logoUrl': relativeOrAbsolute(from, '/assets/flycode-mark.svg'),
+        'meta.faviconSvgUrl': relativeOrAbsolute(from, '/assets/favicon/favicon.svg'),
+        'meta.favicon32Url': relativeOrAbsolute(from, '/assets/favicon/favicon-32x32.png'),
+        'meta.favicon16Url': relativeOrAbsolute(from, '/assets/favicon/favicon-16x16.png'),
+        'meta.faviconIcoUrl': relativeOrAbsolute(from, '/assets/favicon/favicon.ico'),
+        'meta.appleTouchIconUrl': relativeOrAbsolute(from, '/assets/favicon/apple-touch-icon.png'),
         'meta.languageUrl': relativeOrAbsolute(from, route(first, page, slug)),
         'meta.languageCode': first,
         'meta.languageName': languageNames[first],
@@ -97,7 +139,7 @@ async function render(templateName, locale, page, slug = '', extra = {}) {
     if (missing.length) throw new Error(`${locale}/${page}: missing template values: ${missing.join(', ')}`);
     const html = template.replace(/\{\{([^{}]+)\}\}/g, (_, key) => {
         // Cards are the only placeholder containing generator-built markup.
-        return key === 'projects.cards' ? values[key] : escapeHtml(values[key]);
+        return ['projects.cards', 'project.screenshotMarkup'].includes(key) ? values[key] : escapeHtml(values[key]);
     });
     const pagePath = route(locale, page, slug);
     const target = path.join(output, pagePath.slice(1), 'index.html');
@@ -120,6 +162,7 @@ for (const locale of locales) {
             name: project.name[locale], description: project.description[locale],
             type: project.type[locale], technology: project.technology[locale], work: project.work[locale],
         };
+        const screenshotMarkup = projectVisual(project, locale, route(locale, 'project', project.slug));
         await render('project', locale, 'project', project.slug, {
             title: `${localized.name} | FlyCode`,
             description: localized.description,
@@ -129,6 +172,7 @@ for (const locale of locales) {
                 'project.type': localized.type,
                 'project.technology': localized.technology,
                 'project.workCopy': localized.work,
+                'project.screenshotMarkup': screenshotMarkup,
                 'project.url': project.url,
                 'meta.portfolioUrl': relativeOrAbsolute(route(locale, 'project', project.slug), route(locale, 'portfolio')),
             },
@@ -137,7 +181,7 @@ for (const locale of locales) {
 }
 
 for (const entry of ['style.css', 'mediaqueries.css', 'script.js', 'assets']) {
-    await cp(path.join(root, entry), path.join(output, entry), { recursive: true, force: true });
+    await cp(path.join(root, entry), path.join(output, entry), { recursive: true, force: entry !== 'assets' });
 }
 await mkdir(path.join(output, 'hero-animation'), { recursive: true });
 for (const entry of ['fc-idea.css', 'fc-idea.js']) {

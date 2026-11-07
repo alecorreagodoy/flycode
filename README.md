@@ -24,7 +24,7 @@ Routes:
 
 Add one object to `projects.json`. Give it a URL-safe, unique `slug`, a published `url`, and localized `name`, `description`, `type`, `technology`, and `work` values for `es`, `de`, and `en`. The generator uses the same data for the home cards, portfolio listing, and detail page in each language; no page template needs to be duplicated.
 
-Real project screenshots belong in `assets/projects/{slug}/`. Add the screenshot path to the project data and update the detail template/generator to render it with useful alternative text. Do not present a placeholder or a designed illustration as a real screenshot. Currently neither project has a local screenshot, so both detail pages show a translated placeholder. The public Juan Ballarino site could not be retrieved for visual inspection during this update; the Di Giovanni site was reachable, but its images were not copied or reused.
+Real project screenshots belong in `assets/projects/{slug}/`. Set the screenshot path, dimensions, and localized alternative text in `projects.json`; the generator renders the image in the home cards, portfolio, and detail pages. Both Juan Ballarino and Di Giovanni Repuestos currently have an optimized desktop screenshot. Projects without a screenshot continue to use the translated placeholder.
 
 For production, set `SITE_URL` to the public site origin (including any base path, if the site is hosted below a domain subpath) before building. This writes absolute canonical and `hreflang` URLs into all three pages:
 
